@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Listado
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <ion-list>
+      <ion-list-header color="tertiary">
+        <ion-label>Registros</ion-label>
+      </ion-list-header>
+        <ion-item *ngFor="let registro of registros" >
+          <ion-label>
+            <h3>{{registro.Name}}</h3>
+            <p>{{registro.Country}}</p>
+            <p>{{registro.City}}</p>
+          </ion-label>
+        </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
+ 
+
+

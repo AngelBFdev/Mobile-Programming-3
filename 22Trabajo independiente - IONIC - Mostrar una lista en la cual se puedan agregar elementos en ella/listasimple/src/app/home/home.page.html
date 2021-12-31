@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Independiente
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked" >Dato a guardar</ion-label>
+    <ion-input  [(ngModel)]="dato1"></ion-input>
+  </ion-item>
+  
+  <ion-button expand="block" color="primary" (click)="Guardar()">Guardar</ion-button>
+
+  <div class="ion-padding">
+    <ion-list>
+      <ion-list-header color="tertiary">
+        <ion-label>Registros</ion-label>
+      </ion-list-header>
+        <ion-item *ngFor="let registro of registros" >
+          <ion-label>
+            <h3>{{registro}}</h3>
+          </ion-label>
+        </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
+ 

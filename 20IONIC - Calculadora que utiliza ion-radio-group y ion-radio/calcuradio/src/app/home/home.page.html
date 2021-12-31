@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Calculadora
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding="true">
+
+<ion-item>
+  <ion-label position="stacked" >Primer valor</ion-label>
+  <ion-input type="number" [(ngModel)]="valor1"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="stacked" >Segundo valor</ion-label>
+  <ion-input type="number" [(ngModel)]="valor2" ></ion-input>
+</ion-item>
+<ion-list>
+  <ion-radio-group [(ngModel)]="operacion">
+    <ion-list-header>
+      <ion-label>Operaciones</ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Sumar</ion-label>
+      <ion-radio slot="start" value="sumar" checked></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Restar</ion-label>
+      <ion-radio slot="start" value="restar"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Multiplicar</ion-label>
+      <ion-radio slot="start" value="multiplicar"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+</ion-list>
+
+<ion-button expand="block" color="primary" (click)="Calcular()">Calcular</ion-button>
+<p><span [innerHTML]="resultado"></span></p>

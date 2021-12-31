@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>
+      Pagina principal
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+      <ion-item>
+          <ion-label position="stacked">Nombre</ion-label>
+          <ion-input type="text" [(ngModel)]="nombre"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="stacked">ID</ion-label>
+            <ion-input type="number" [(ngModel)]="id"></ion-input>
+          </ion-item>
+    <ion-button expand="block" color="dark" (click)="irPagina2()">Ir pagina dos</ion-button>
+
+  </div>
+</ion-content>

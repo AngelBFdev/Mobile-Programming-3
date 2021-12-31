@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Suma de dos numeros
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-label position="stacked" >Primer valor</ion-label>
+    <ion-input [(ngModel)]="valor1"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label position="stacked" >Segundo valor</ion-label>
+    <ion-input [(ngModel)]="valor2"></ion-input>
+  </ion-item>
+  
+  <ion-button expand="block" color="primary" (click)="Sumar()">Sumar</ion-button>
+  <h3>{{resultado}}</h3>
+</ion-content>
